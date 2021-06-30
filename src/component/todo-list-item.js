@@ -6,10 +6,12 @@ const styleImportant=(important)=>{
          return {color:"red"}
     }
 }
-const TodoListItem=({lable, important = false})=>{
-    return (
-       <span style={styleImportant(important)}>{lable}</span>
-    );
+const TodoListItem=({lable,important = false})=>{
+   console.log(lable);
+    return <span style={styleImportant(important)}>{lable}</span> 
+    
+       
+    
 }
 
 export default TodoListItem;

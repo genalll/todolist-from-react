@@ -4,12 +4,20 @@ import SearchBlock from "../src/component/search-block.js";
 import Header from "../src/component/header.js";
 import ToDoList from "../src/component/todo-list.js";
 
+
+
 const App = () => {
+  const todolist=[
+    {lable:"выпить кофе",important:true},
+    {lable:"сездить на дачу"},
+    {lable:"Выпить чаю"},
+    {lable:"Реакт хуярю"},
+  ]
   return (
     <div>
       <Header />
       <SearchBlock />
-      <ToDoList />
+      <ToDoList todos={todolist}/>
     </div>
   )
 }
