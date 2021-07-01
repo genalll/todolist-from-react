@@ -14,13 +14,13 @@ export default class TodoListItem extends React.Component{
             }
         }
         const {lable,important=false}=this.props;
-        return (<span onClick={()=> alert('Привет')} style={styleImportant(important)} className="todolistitem">{lable}
-        <div className="button">
-        <button className="btn btn-primary" type="submit"><i className="bi bi-alarm alarm"></i></button>
-        <button className="btn btn-primary" type="submit"><i className="bi bi-bucket-fill"></i></button>
-        </div>
-        </span>
-
-        )
+        return (<div className="todolistitem">
+            <span onClick={()=> alert('Привет')} style={styleImportant(important)} className="todolistitem">{lable} </span>
+            <div className="button">
+            <button className="btn btn-primary" type="submit"><i className="bi bi-alarm alarm"></i></button>
+            <button className="btn btn-primary" type="submit"><i className="bi bi-bucket-fill"></i></button>
+            </div>
+               </div>
+            )
     }
 }
