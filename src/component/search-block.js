@@ -1,6 +1,8 @@
 import React from "react"; //Импортируем React
 import "./search-block.css"
-const SearchBlock=()=>{
+
+export default class SearchBlock extends React.Component{
+  render(){
     return (
       <div className="centr">
       <input className="search-block" placeholder="Поиск"></input>
@@ -11,6 +13,8 @@ const SearchBlock=()=>{
       </div>
       </div>
     )
-  };
+  }
+}
 
-  export default SearchBlock;
+
+  
