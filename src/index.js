@@ -8,10 +8,10 @@ import ToDoList from "../src/component/todo-list.js";
 
 const App = () => {
   const todolist=[
-    {lable:"выпить кофе", important:true},
-    {lable:"сездить на дачу"},
-    {lable:"Выпить чаю"},
-    {lable:"Реакт хуярю"},
+    {lable:"выпить кофе", important:true,id:1},
+    {lable:"сездить на дачу",id:2},
+    {lable:"Выпить чаю",id:3},
+    {lable:"Реакт изучаю",id:4},
   ]
   return (
     <div>
