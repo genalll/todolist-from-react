@@ -9,6 +9,6 @@ const ToDoList=({todos})=> {
     return <li key={item.id} className="list-group-item"> <TodoListItem lable={item.lable} important={item.important}/></li>
   }
   )
-  return <ul className="list-group todo-list">{elements}</ul>
+  return <ul className="list-group todo-list container">{elements}</ul>
 };
 export default ToDoList;

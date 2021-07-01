@@ -1,3 +1,10 @@
 .todo-list .list-group-item{
+    text-align: center;
     padding: .25rem .75rem;
+    margin: 0 auto;
+    width: 80%;
+}
+.list-group{
+    align-items: center;
+    padding-right: 0;
 }
